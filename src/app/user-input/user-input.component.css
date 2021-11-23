@@ -1,0 +1,26 @@
+.userinput--container {
+    text-align: center;  
+    
+    background-repeat: initial;
+    opacity: 0.9;
+}
+
+/* .sides {
+    background-image: url("/assets/background_3.png");
+} */
+
+
+
+.user-form .mat-form-field {
+    display: block;
+    padding: 20px;
+    margin: 0 auto;
+    opacity: 1;
+}
+
+.user-submit-btn {
+    padding: 10px;
+    margin-top: 50px;
+    background-color:#f60;
+    width: 100%;
+}

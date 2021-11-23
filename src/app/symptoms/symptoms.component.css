@@ -1,0 +1,24 @@
+.symptom-container {
+    text-align: center;
+}
+
+.search-text {
+    padding: 20px 0;
+}
+
+.search__form .mat-form-field{
+    width: 50%;
+}
+
+.add-more {
+    background-color: #007bff;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    top: 10px;
+}
+
+.getResults__button {
+    background-color:#f60;
+}
