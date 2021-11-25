@@ -18,8 +18,13 @@ import { MatButtonModule } from "@angular/material/button";
 // import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { MatTableModule } from "@angular/material/table";
 import { MatRadioModule } from "@angular/material/radio";
-
-
+import { PossibleCauseComponent } from './possible-cause/possible-cause.component';
+import { HttpClientModule } from '@angular/common/http'
+import {MatExpansionModule} from '@angular/material/expansion';
+import { BookAppointmentComponent } from './book-appointment/book-appointment.component';
+import { MapComponent } from './map/map.component';
+import { GoogleMapsModule } from '@angular/google-maps';
+import {MatCardModule} from '@angular/material/card';;
 
 @NgModule({
   declarations: [
@@ -27,11 +32,15 @@ import { MatRadioModule } from "@angular/material/radio";
     UserInputComponent,
     HeaderComponent,
     FooterComponent,
-    SymptomsComponent
+    SymptomsComponent,
+    PossibleCauseComponent,
+    BookAppointmentComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
     MatFormFieldModule,
+    HttpClientModule,
     MatInputModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -40,8 +49,10 @@ import { MatRadioModule } from "@angular/material/radio";
     MatButtonModule,
     MatTableModule,
     FlexLayoutModule,
-    MatRadioModule
-    
+    MatRadioModule,
+    MatExpansionModule,
+    GoogleMapsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,40 @@
+<div class="userinput--container">
+    
+    <form  #bookAppointment="ngForm" class="user-form">
+        <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-between" fxLayoutGap.lt-md="20px">
+
+          <div fxFlex="25%" class="sides">
+
+          </div>
+
+          <div fxFlex="50%" class="content-bg">
+            <mat-form-field class="user-last-name" appearance="fill">
+              <mat-label>Email Id</mat-label>
+              <input matInput type="email" placeholder="abc@example.com" name="email" [(ngModel)]="email" required>
+            </mat-form-field>
+
+
+            <mat-form-field class="user-age" appearance="fill">
+              <mat-label>Mobile Number</mat-label>
+              <input  matInput  name="mobile" placeholder="##########" [(ngModel)]="mobile" required>
+            </mat-form-field>
+
+            <mat-form-field class="user-last-name" appearance="fill">
+                <mat-label>Pincode</mat-label>
+                <input matInput maxlength="6" placeholder="######" name="pincode" [(ngModel)]="pincode" required>
+              </mat-form-field>
+
+
+            <button mat-raised-button color="primary" (click)="confirm()" class="user-submit-btn" [disabled]="!bookAppointment.valid ">
+              Submit</button>
+
+          </div>
+
+          <div fxFlex="25%" class="sides">
+          </div>
+        </div>
+        
+
+      </form>
+
+</div>

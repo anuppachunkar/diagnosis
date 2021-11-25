@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  envName: "dev",
+  causesJson: "./assets/json/causes.json",
+  profile: './assets/json/userprofile.json',
 };
 
 /*

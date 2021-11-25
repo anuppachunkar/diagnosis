@@ -1,0 +1,71 @@
+<div class="map__container">
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-between" fxLayoutGap.lt-md="20px">
+        <div fxFlex="50%">
+            <div fxLayout="column" fxLayout.lt-md="column" fxLayoutAlign="space-between" fxLayoutGap.lt-md="20px">
+                <div fxFlex="20%"></div>
+
+                <div fxFlex="60%">
+                    <google-map ></google-map>
+                </div>
+
+                <div fxFlex="20%"></div>
+            </div>
+        </div>
+       
+    
+        <div fxFlex="50%">
+            <div fxLayout="column" fxLayout.lt-md="column" fxLayoutAlign="space-between" fxLayoutGap.lt-md="20px"></div>
+            <div fxFlex="25%"></div>
+    
+            <div fxFlex="50%">
+                <mat-card class="example-card">
+                    <mat-card-title-group>
+                      <mat-card-title>Dr. Hitesh Sharma</mat-card-title>
+                      <mat-card-subtitle>
+                        <button mat-raised-button color="primary" (click)="confirmAppt()" 
+                        class="user-submit-btn">Book</button>
+                      </mat-card-subtitle>
+                      <img mat-card-sm-image src="../../assets/doctor.jpg" >
+                    </mat-card-title-group>
+                    <mat-card-content>
+                        <address>Shop No.3, Prime rose, Baner, Pune, 411045</address>
+                    </mat-card-content>
+                  </mat-card>
+
+                  <mat-card class="example-card">
+                    <mat-card-title-group>
+                      <mat-card-title>Dr. Ajay Mehra</mat-card-title>
+                      <mat-card-subtitle>
+                        <button mat-raised-button color="primary" (click)="confirmAppt()" 
+                            class="user-submit-btn">Book</button>
+                      </mat-card-subtitle>
+                      <img mat-card-sm-image src="../../assets/doctor.jpg" >
+                    </mat-card-title-group>
+                    <mat-card-content>
+                        <address>Shop No.3, Prime rose, Baner, Pune, 411045</address>
+                    </mat-card-content>
+                  </mat-card>
+
+                  <mat-card class="example-card">
+                    <mat-card-title-group>
+                      <mat-card-title>Dr. Pooja Mathur</mat-card-title>
+                      <mat-card-subtitle>
+                        <button mat-raised-button color="primary" (click)="confirmAppt()" 
+                        class="user-submit-btn">Book</button>
+                      </mat-card-subtitle>
+                      <img mat-card-sm-image src="../../assets/doctor.jpg" >
+                    </mat-card-title-group>
+                    <mat-card-content>
+                        <address>Shop No.3, Prime rose, Baner, Pune, 411045</address>
+                    </mat-card-content>
+                  </mat-card>
+            </div>
+    
+            <div fxFlex="25%"></div>
+        </div>
+    
+    </div>
+</div>
+
+
+
