@@ -1,0 +1,18 @@
+{
+    "name": "Anup",
+    "age": 35,
+    "possibleDiseases": [
+        {
+            "disease": "malaria",
+            "causes": [
+                "lasmodium spread by mosquitoes"
+            ],
+            "prevention": [
+                "Insecticide-treated nets ",
+                " Insect repellent",
+                "  indoor residual spraying"
+            ],
+            "moreInformationUrl": "https://en.wikipedia.org/wiki/Malaria"
+        }
+    ]
+}

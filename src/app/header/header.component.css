@@ -1,0 +1,17 @@
+.header-container {
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    /* border-bottom: 2px #000000 solid; */
+    box-shadow: rgb(0 0 0 / 10%) 0px 0px 12px 0px;
+    height: 60px;
+}
+
+.header-container__title {
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* text-align: center; */
+    margin: 0 30% 0 20%;
+    padding: 15px 0;
+    
+}

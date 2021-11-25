@@ -1,0 +1,119 @@
+<div class="symptom-container">
+
+
+<div class="search__form">
+    <h3 class="search-text">Please select the appropriate symptoms how you are feeling</h3>
+
+    
+<form #symptomForm="ngForm"  >
+    <div fxLayout="column" fxLayout.lt-md="column" fxLayoutAlign="space-between" fxLayoutGap="52px" fxLayoutGap.lt-md="20px">
+      <div fxFlex="100%" fxFlex.lt-md="100%">
+        
+        <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-between" fxLayoutGap="33px" fxLayoutGap.lt-md="20px">
+            
+            <div fxFlex="25%"> </div>
+
+            <div fxFlex="50%" fxLayout="column" class="content-bg">
+                <div fxFlex="100%">
+                    <div class="info-message" *ngIf="infoMessage!=''">{{infoMessage}}</div>
+                    <mat-form-field class="background-white" appearance="fill" [hideRequiredMarker]="true">
+                      <mat-label>Symptoms</mat-label>
+                      <mat-select name="symptom1" #symptom1 ngModel required >
+                        <mat-option *ngFor="let item of symptomsList" value="{{item.name}}">{{item.name}}
+                        </mat-option>
+                      </mat-select>
+                      <!-- <mat-error><img src="{{rootPath}}assets/icons/warning.svg"> <span>Required field</span>
+                      </mat-error> -->
+                    </mat-form-field>
+                  </div>
+
+                  <div fxFlex="100%" *ngIf="count>1">
+                    <mat-form-field class="background-white" appearance="fill" [hideRequiredMarker]="true">
+                      <mat-label>Symptoms</mat-label>
+                      <mat-select  name="symptom2" #symptom2 ngModel required >
+                        <mat-option *ngFor="let item of symptomsList" value="{{item.name}}">{{item.name}}
+                        </mat-option>
+                      </mat-select>
+                      <!-- <mat-error><img src="{{rootPath}}assets/icons/warning.svg"> <span>Required field</span>
+                      </mat-error> -->
+                    </mat-form-field>
+                  </div>
+
+                  <div fxFlex="100%" *ngIf="count>2">
+                    <mat-form-field class="background-white" appearance="fill" [hideRequiredMarker]="true">
+                      <mat-label>Symptoms</mat-label>
+                      <mat-select  name="symptom3" #symptom3 ngModel required >
+                        <mat-option *ngFor="let item of symptomsList" value="{{item.name}}">{{item.name}}
+                        </mat-option>
+                      </mat-select>
+                      <!-- <mat-error><img src="{{rootPath}}assets/icons/warning.svg"> <span>Required field</span>
+                      </mat-error> -->
+                    </mat-form-field>
+                  </div>
+
+                  <div fxFlex="100%" *ngIf="count>3">
+                    <mat-form-field class="background-white" appearance="fill" [hideRequiredMarker]="true">
+                      <mat-label>Symptoms</mat-label>
+                      <mat-select name="symptom4" #businessArea ngModel required >
+                        <mat-option *ngFor="let item of symptomsList" value="{{item.name}}">{{item.name}}
+                        </mat-option>
+                      </mat-select>
+                      <!-- <mat-error><img src="{{rootPath}}assets/icons/warning.svg"> <span>Required field</span>
+                      </mat-error> -->
+                    </mat-form-field>
+                  </div>
+
+                  <div fxFlex="100%" *ngIf="count>4">
+                    <mat-form-field class="background-white" appearance="fill" [hideRequiredMarker]="true">
+                      <mat-label>Symptoms</mat-label>
+                      <mat-select name="symptom5" #businessArea ngModel required >
+                        <mat-option *ngFor="let item of symptomsList" value="{{item.name}}">{{item.name}}
+                        </mat-option>
+                      </mat-select>
+                      <!-- <mat-error><img src="{{rootPath}}assets/icons/warning.svg"> <span>Required field</span>
+                      </mat-error> -->
+                    </mat-form-field>
+                  </div>
+
+                  <div fxFlex="100%" *ngIf="count>5">
+                    <mat-form-field class="background-white" appearance="fill" [hideRequiredMarker]="true">
+                      <mat-label>Symptoms</mat-label>
+                      <mat-select name="symptom6" #businessArea ngModel required >
+                        <mat-option *ngFor="let item of symptomsList" value="{{item.name}}">{{item.name}}
+                        </mat-option>
+                      </mat-select>
+                      <!-- <mat-error><img src="{{rootPath}}assets/icons/warning.svg"> <span>Required field</span>
+                      </mat-error> -->
+                    </mat-form-field>
+                  </div>
+
+                  <div fxFlex="100%">
+                    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center" fxLayoutGap="33px" fxLayoutGap.lt-md="20px">
+                        <div>
+                            <a  class="add-more" (click) = "addMore(symptomForm)">
+                                Add more symptoms
+                            </a> 
+                        </div>
+                
+                        <div>
+                            <!-- <button mat-button color="primary" class="getResults__button" (click)="getResult(symptomForm)" [disabled]="symptomForm.invalid || symptomForm.pristine">
+                               Submit
+                            </button>  -->
+                            <button mat-raised-button color="primary" (click)="getResult(symptomForm)" class="user-submit-btn" [disabled]="symptomForm.invalid || symptomForm.pristine">
+                                Submit</button>
+                        </div>
+                    </div>
+                  </div>
+                  
+            </div>
+
+            <div fxFlex="25%">  </div>
+          
+        </div>
+        
+      </div>
+    </div>
+  </form>
+  </div>
+
+  </div>

@@ -1,0 +1,53 @@
+.symptom-container {
+    text-align: center;
+   
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.search-text {
+    padding: 20px 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+.search__form .mat-form-field{
+    width: 100%;
+    margin: 10px 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.add-more {
+    background-color: #007bff;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    top: 10px;
+    color: #fff
+}
+
+.getResults__button {
+    background-color:#f60;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: normal; */
+    background-color:#f60;
+    width: 100%;
+}
+
+.info-message {
+    background-color: darkorange;
+    padding: 20px;
+    margin: 20px auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.action-btn {
+    margin-bottom: 50px;
+}
+
+.user-submit-btn {
+    background-color:#f60;
+    width: 100%;
+}
+
+

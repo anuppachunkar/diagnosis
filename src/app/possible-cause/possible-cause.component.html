@@ -1,0 +1,72 @@
+<div class="causes--container">
+
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-between" fxLayoutGap.lt-md="20px">
+        <div fxFlex="25%" class="sides"></div>
+        
+        <div fxFlex="50%" class="content-bg">
+            <h3> Based on your symptoms you are most probably suffering from: </h3>
+            <!-- <div class="example-action-buttons">
+                <button mat-button (click)="accordion.openAll()">Expand All</button>
+                <button mat-button (click)="accordion.closeAll()">Collapse All</button>
+            </div> -->
+              <!-- #docregion multi -->
+              <!-- <mat-accordion class="example-headers-align" multi *ngFor="let item of displayResponse.possibleDiseases">
+                <mat-expansion-panel>
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        {{item.disease | uppercase}}
+                    </mat-panel-title>
+                    
+                  </mat-expansion-panel-header>
+
+                  
+                    <div *ngFor = "let data of item.causes">
+                        <p class="caused-by">Generally caused by</p>
+                    </div>
+                    <div *ngFor = "let data of item.prevention">
+                    </div>  
+              
+                </mat-expansion-panel>
+                
+              </mat-accordion> -->
+              
+              
+              <!-- Copyright 2021 Google LLC. All Rights Reserved.
+                  Use of this source code is governed by an MIT-style license that
+                  can be found in the LICENSE file at https://angular.io/license -->
+
+            <div class="response-message" *ngFor="let item of displayResponse.possibleDiseases">
+                <div class="possible-disease">
+                    {{item.disease | uppercase}}
+                </div>
+                <p class="caused-by">Generally caused by: </p>
+                <ul *ngFor = "let data of item.causes">
+                    <li> {{data}}</li>
+                </ul>
+                <p class="prevention">Please take below preventions:</p>
+                <ul *ngFor = "let data of item.prevention">
+                    <li> {{data}}</li>
+                </ul>
+                <div class="know__more-container">
+                    <a class="know-more" href="{{item.moreInformationUrl}}" target="_blank">Know more</a>
+                </div>
+                
+            </div>
+
+            <button mat-raised-button color="primary" (click)="bookAppointment()" class="user-submit-btn">
+                Check near by doctor</button>
+
+            <section>
+                <span class="note">Note: </span> This tool is not a substitute for professional medical advice, 
+                diagnosis, or treatment. If you are experiencing a life-threatening 
+                emergency that requires immediate attention please call 108 or the 
+                number for your local emergency service.
+            </section>
+
+            
+
+        </div>
+
+        <div fxFlex="25%" class="sides"></div>
+    </div>
+</div>
