@@ -11,6 +11,12 @@ export class SymptomsComponent implements OnInit {
 
   symptomsList = [
     {
+      "name": "Loss Of Taste or Smell"
+    }, 
+    {
+      "name": "Dry Cough "
+    },
+    {
       "name": "Anxiety"
     },
     {
@@ -41,16 +47,13 @@ export class SymptomsComponent implements OnInit {
       "name": "Headaches"
     },
     {
-      "name": "Weakness/Fatigue "
+      "name": "Weakness/Fatigue"
     },
     {
       "name": "Abdominal Pain"
     },
     {
       "name": "Muscle Pain"
-    },
-    {
-      "name": "Dry Cough"
     },
     {
       "name": "Diarrhoea/Constipation"
@@ -74,14 +77,15 @@ export class SymptomsComponent implements OnInit {
       "name": "Shortness in Breath"
     },
     {
-      "name": "Dizziness "
+      "name": "Dizziness"
     }, 
     {
       "name": "Fast Heartbeat"
     },
     {
-      "name": "Indigestion "
-    } 
+      "name": "Indigestion"
+    }
+    
   ]
 
 

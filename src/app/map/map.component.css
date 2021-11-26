@@ -1,5 +1,6 @@
 .example-card {
     margin: 30px 0;
+    border-radius: 15px;
 }
 
 .user-submit-btn {
