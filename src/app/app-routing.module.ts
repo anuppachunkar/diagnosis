@@ -32,6 +32,10 @@ const routes: Routes = [
     redirectTo: 'user',
     pathMatch: 'full'
   },
+  { 
+    path: '*', 
+    redirectTo: 'user'
+  },
 
 ];
 
