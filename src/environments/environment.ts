@@ -5,8 +5,8 @@
 export const environment = {
   production: false,
   envName: "dev",
-  causesJson: "./assets/json/causes.json",
-  profile: './assets/json/userprofile.json',
+  causesJson: "http://localhost:8082/self-assessment-system-api/diagnose"
+  
 };
 
 /*
@@ -17,3 +17,4 @@ export const environment = {
  * on performance if an error is thrown.
  */
 // import 'zone.js/plugins/zone-error';  // Included with Angular CLI.
+//causesJson: "./assets/json/causes.json"
